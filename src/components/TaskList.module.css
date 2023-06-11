@@ -1,0 +1,118 @@
+.taskList {
+  margin: 64px auto 0;
+  max-width: 736px;
+}
+  
+.taskListEmpty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: var(--gray-300);
+  border-top: 1px solid var(--gray-400);
+  padding: 4rem 1.5rem;
+  margin-top: 1.5rem;
+}
+.taskListEmpty svg {
+  opacity: 0.5;
+}
+
+.taskListEmpty .taskListEmptyDescription{
+  line-height: 0.5;
+  margin-top: 1rem;
+}
+
+.taskList header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.createCount {
+  color: var(--blue);
+}
+
+.doneCount {
+  color: var(--purple);
+}
+
+.createCount span,
+.doneCount span {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 15px;
+}
+
+.taskListContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.taskListItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.taskListItem:hover {
+  border: 1px solid var(--purple);
+}
+
+.removeIcon {
+  color: var(--gray-300);
+  padding: 0.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.removeIcon:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+}
+
+.titleTask {
+  flex: 1;
+}
+
+.titleTaskCompleted {
+  flex: 1;
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.checkbox:hover {
+  border-color: var(--blue-dark);
+}
+.checkbox:checked {
+  background-color: var(--purple-dark);
+  border-color: var(--purple-dark);
+}
+.checkbox:checked:hover {
+  background-color: var(--purple);
+  border-color: var(--purple);
+}
+.checkbox:checked::before {
+  content: "\002714";
+  display: flex;
+  justify-content: center;
+}

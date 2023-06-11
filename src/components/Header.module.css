@@ -1,0 +1,21 @@
+.header {
+    background-color: var(--gray-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.header img {
+    height: 2.25rem;
+    margin-right: 0.75rem;
+}
+
+.header strong {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+.header strong span {
+    color: var(--purple-dark);
+}
